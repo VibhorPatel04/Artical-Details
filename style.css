@@ -1,0 +1,184 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f3f4f6;
+    max-width: 80rem;
+    margin: auto;
+    padding: 1.5rem 1.5rem;
+}
+article .article-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 290px;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background-image: url("https://bit.ly/3LlfLx7");
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+article .article-header:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+article .article-header div, article .article-header h1, article .article-header h2 {
+    position: relative;
+}
+article .article-header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+article .article-header .header-content h1 {
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+article .article-header .header-content h2 {
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+article .article-header .header-content .article-data {
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.1rem;
+}
+article .article-header .header-content .article-data i {
+    margin-right: 0.2rem;
+    font-size: 0.9rem;
+}
+article .article-header .footer-content .article-author {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+article .article-header .footer-content .article-author img {
+    max-width: 100%;
+    width: 2rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+@media (min-width: 900px) {
+    article .article-header {
+        min-height: 400px;
+        background-position: center 60%;
+   }
+}
+article .body-article {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1.5rem 0;
+}
+article .body-article .article-content {
+    color: #505050;
+}
+article .body-article .article-content p {
+    color: inherit;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+}
+article .body-article .article-content quote {
+    position: relative;
+    background: rgba(220, 220, 220, 0.4);
+    padding: 1rem 2rem;
+    display: block;
+    margin-top: 2.2rem;
+    font-style: italic;
+    color: #787878;
+}
+article .body-article .article-content quote:before {
+    content: " 〞 ";
+    color: #c8c8c8;
+    position: absolute;
+    left: -2.6rem;
+    top: -2.4rem;
+    font-size: 7.5rem;
+}
+article .body-article .article-content img {
+    max-width: 100%;
+    width: 18rem;
+    margin: 0.6rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.2);
+}
+article .body-article .article-content img.float-left {
+    float: left;
+    margin-right: 2rem;
+}
+article .body-article .article-content img.float-right {
+    float: right;
+    margin-left: 2rem;
+}
+article .body-article .share-article-links div {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+article .body-article .share-article-links div p {
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    color: #919191;
+    margin: 0;
+    margin-top: 1.2rem;
+}
+article .body-article .share-article-links div a {
+    text-align: center;
+    text-decoration: none;
+    color: #969696;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    background: #dcdcdc;
+    padding: 0.8rem 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 0.4rem;
+    transition: all 0.3s;
+}
+article .body-article .share-article-links div a i {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+article .body-article .share-article-links div a i.fa-twitter {
+    color: #1d9bf0;
+}
+article .body-article .share-article-links div a i.facebook-icon {
+    color: #1773ea;
+}
+article .body-article .share-article-links div a i.linkedin-icon {
+    color: #0a66c2;
+}
+article .body-article .share-article-links div a:hover {
+    border: 2px solid #c3c3c3;
+    transform: scale(1.05);
+}
